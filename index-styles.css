@@ -93,9 +93,12 @@
 .merge-music {
     flex: 0.25 0.25 auto;
     margin: 10px;
-    height: 40px;
+    height: 30%;
     align-self: center;
     background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .avatar {
@@ -190,6 +193,7 @@
     padding: 5px;
     margin: 5px;
     height: 25%;
+    align-items: center;
 }
 
 .logo {
@@ -205,6 +209,10 @@
     margin: 5px;
     background-color: lightgreen;
     padding: 10px;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
 }
 
 .upload {
@@ -212,6 +220,9 @@
     margin: 5px;
     padding: 10px;
     height: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .second-right {
@@ -254,9 +265,11 @@
 .song-name,
 .under-song {
     background-color: lightblue;
-    margin: 5px;
+    margin: 0.75%;
     padding: 5px;
-    height: 33.33333333333333333333333333333333333333333%; /*more accurate*/
+    height: 30%;
+    flex: 1 1 auto;
+    overflow: hidden;
 }
 
 .song-status {
