@@ -6,19 +6,28 @@
 
 .page {
     padding: 5px;
-    background-color: wheat;
     height: 100vh;
     overflow: scroll;
     overflow-x: hidden;
+    font-family: "Concert One", cursive;
 }
 
 div {
     overflow: hidden;
 }
 
+img {
+    height: 80%;
+    transition: transform 25ms;
+}
+
+img:hover {
+    transform: scale(0.98);
+}
+
 .top-page,
 .bottom-page {
-    background-color: aquamarine;
+    background-color: rgb(243, 232, 200);
     margin: 10px;
     height: 70%;
 }
@@ -40,7 +49,7 @@ div {
     justify-content: space-between;
     align-items: flex-start;
     height: 60%;
-    background-color: lightpink;
+    background-color: rgb(243, 232, 150);
 }
 
 .top-page-lower {
@@ -48,21 +57,20 @@ div {
     justify-content: space-between;
     text-align: center;
     align-items: flex-end;
-    background-color: lightseagreen;
+    background-color: rgb(243, 232, 150);
     height: 40%;
 }
 
 .name-stack {
-    background-color: lightcoral;
+    background-color: lightyellow;
     display: flex;
     flex-direction: column;
     margin-top: 10px;
     width: 30%;
     align-self: stretch;
-}
-
-.project-intro::-webkit-scrollbar {
-    display: none;
+    border-radius: 1rem;
+    box-shadow: 0.25rem 0.25rem #121212;
+    padding: 5px;
 }
 
 .project-name {
@@ -70,19 +78,30 @@ div {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 4rem;
+    font-size: 4.5rem;
+    border-radius: 0.5rem 0.5rem 0 0;
 }
 
 .project-intro {
-    padding: 10px;
+    padding: 20px;
     height: 40%;
     overflow: scroll;
+    border-radius: 0 0 0.5rem 0.5rem;
+    text-align: justify;
+    font-size: 1.125rem;
+    display: flex;
+    align-items: center;
 }
 
-.name-stack div {
+.project-intro::-webkit-scrollbar {
+    display: none;
+}
+
+.project-name,
+.project-intro {
     text-align: center;
     margin: 5px;
-    background-color: azure;
+    background-color: rgb(255, 204, 237);
 }
 
 .top-page-song {
@@ -91,7 +110,7 @@ div {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: lightgreen;
+    background-color: rgb(243, 232, 100);
 }
 
 .merge-music {
@@ -99,25 +118,36 @@ div {
     margin: 10px;
     height: 30%;
     align-self: center;
-    background-color: lightblue;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .avatar {
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-    background-color: cadetblue;
-    margin: 10px;
+    height: 20%;
+    width: 10rem;
     display: flex;
     align-items: center;
-    padding: 10px;
+}
+
+.avatar img {
+    width: 100%;
 }
 
 .right-box {
-    color: transparent;
-    background-color: transparent;
+    visibility: hidden;
+}
+
+.left-box {
+    padding: 10px;
+}
+
+.left-box,
+.right-box {
+    width: 10%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 
 .bottom-page {
@@ -129,7 +159,7 @@ div {
 }
 
 .bottom-page-first {
-    background-color: lightcoral;
+    background-color: rgb(243, 232, 150);
     height: 40%;
     display: flex;
     justify-content: center;
@@ -137,34 +167,41 @@ div {
 }
 
 .bottom-page-second {
-    background-color: lightgreen;
+    background-color: rgb(243, 232, 150);
     height: 60%;
     display: flex;
-    padding: 5px;
 }
 
 .try-it {
     position: absolute;
     align-self: center;
-    background-color: cadetblue;
-    border-radius: 5px;
+    height: 7.5%;
     padding: 10px;
     top: 38%;
     width: 10%;
-    box-shadow: 0.25rem 0.25rem #121212;
-    transition: transform 50ms, box-shadow 50ms;
-    height: 7.5%;
-    overflow: hidden;
 }
 
-.try-it:active {
+.blue-button {
+    background-color: rgb(1, 212, 341);
+    box-shadow: 0.25rem 0.25rem #121212;
+    transition: transform 50ms, box-shadow 75ms;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.blue-button:hover {
+    box-shadow: 0.1875rem 0.1875rem #121212;
+    transform: translate(0.0625rem, 0.0625rem);
+}
+
+.blue-button:active {
     box-shadow: 0.125rem 0.125rem #121212;
     transform: translate(0.125rem, 0.125rem);
 }
 
 .second-left,
 .second-right {
-    background-color: lightsalmon;
+    background-color: rgb(243, 232, 100);
     width: 50%;
 }
 
@@ -182,24 +219,28 @@ div {
     justify-content: center;
 }
 
-.second-container {
-    background-color: linen;
+.upload-container {
+    background-color: lightyellow;
     padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 60%;
     height: 70%;
+    border-radius: 1rem;
+    box-shadow: 0.25rem 0.25rem #121212;
 }
 
 .upload-top {
-    background-color: lightpink;
+    background-color: rgb(255, 204, 237);
+    );
     display: flex;
     flex-direction: row;
     padding: 5px;
     margin: 5px;
     height: 25%;
     align-items: center;
+    border-radius: 0.5rem 0.5rem 0 0;
 }
 
 .logo {
@@ -213,7 +254,7 @@ div {
 .logo,
 .music-aspect {
     margin: 5px;
-    background-color: lightgreen;
+    background-color: rgb(179, 254, 176);
     padding: 10px;
     height: 90%;
     display: flex;
@@ -221,13 +262,14 @@ div {
 }
 
 .upload {
-    background-color: lightpink;
+    background-color: rgb(255, 204, 237);
     margin: 5px;
     padding: 10px;
     height: 75%;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 0 0 0.5rem 0.5rem;
 }
 
 .second-right {
@@ -238,15 +280,17 @@ div {
     background-color: lightyellow;
     display: flex;
     flex-direction: row;
-    padding: 5px;
+    padding: 10px;
     align-items: center;
     height: 60%;
     width: 25%;
+    box-shadow: 0.25rem 0.25rem #121212;
+    border-radius: 1rem;
 }
 
 .song-card-right,
 .song-card-left {
-    background-color: lightpink;
+    background-color: rgb(255, 204, 237);
     padding: 5px;
     margin: 5px;
 }
@@ -256,6 +300,7 @@ div {
     flex-direction: column;
     height: 100%;
     width: 70%;
+    border-radius: 0 0.5rem 0.5rem 0;
 }
 
 .song-card-left {
@@ -264,16 +309,19 @@ div {
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 0.5rem 0 0 0.5rem;
 }
 
 .song-status,
 .song-name,
 .under-song {
-    background-color: lightblue;
+    background-image: linear-gradient(to right, rgb(179, 254, 176), transparent);
     margin: 0.75%;
-    padding: 5px;
+    padding: 10px;
     height: 30%;
     flex: 1 1 auto;
+    text-align: left;
+
 }
 
 .song-status {
