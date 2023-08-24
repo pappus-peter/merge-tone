@@ -1,1 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+.page {
+    padding: 5px;
+    background-color: wheat;
+    height: 100vh;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.top-page,
+.bottom-page {
+    background-color: aquamarine;
+    margin: 10px;
+    height: 70%;
+}
+
+.top-page {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-page-upper,
+.top-page-lower {
+    margin: 5px;
+    padding: 5px;
+}
+
+.top-page-upper {
+    justify-self: flex-start;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 60%;
+    background-color: lightpink;
+}
+
+.top-page-lower {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: flex-end;
+    background-color: lightseagreen;
+    height: 40%;
+}
+
+.name-stack {
+    background-color: lightcoral;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    width: 30%;
+    align-self: stretch;
+}
+
+.project-intro::-webkit-scrollbar {
+    display: none;
+}
+
+.project-name {
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+}
+
+.project-intro {
+    padding: 10px;
+    height: 40%;
+    overflow: scroll;
+}
+
+.name-stack div {
+    text-align: center;
+    margin: 5px;
+    background-color: azure;
+}
+
+.top-page-song {
+    flex: 1 1 auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgreen;
+}
+
+.merge-music {
+    flex: 0.25 0.25 auto;
+    margin: 10px;
+    height: 40px;
+    align-self: center;
+    background-color: lightblue;
+}
+
+.avatar {
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: cadetblue;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.right-box {
+    color: transparent;
+    background-color: transparent;
+}
+
+.bottom-page {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 5px;
+}
+
+.bottom-page-first {
+    background-color: lightcoral;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-page-second {
+    background-color: lightgreen;
+    height: 60%;
+    display: flex;
+    padding: 5px;
+}
+
+.try-it {
+    position: absolute;
+    align-self: center;
+    background-color: cadetblue;
+    border-radius: 5px;
+    padding: 10px;
+    top: 38%;
+    width: 10%;
+    box-shadow: 0.25rem 0.25rem #121212;
+    transition: transform 50ms, box-shadow 50ms;
+}
+
+.try-it:active {
+    box-shadow: 0.125rem 0.125rem #121212;
+    transform: translate(0.125rem, 0.125rem);
+}
+
+.second-left,
+.second-right {
+    background-color: lightsalmon;
+    width: 50%;
+}
+
+.second-left {
+    border-right: 2px solid #121212;
+    border-top: 2px solid #121212;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.second-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.second-container {
+    background-color: linen;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    height: 70%;
+}
+
+.upload-top {
+    background-color: lightpink;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    margin: 5px;
+    height: 25%;
+}
+
+.logo {
+    width: 20%;
+}
+
+.music-aspect {
+    width: 80%;
+}
+
+.logo,
+.music-aspect {
+    margin: 5px;
+    background-color: lightgreen;
+    padding: 10px;
+}
+
+.upload {
+    background-color: lightpink;
+    margin: 5px;
+    padding: 10px;
+    height: 75%;
+}
+
+.second-right {
+    border-top: 2px solid #121212;
+}
+
+.song-card {
+    background-color: lightyellow;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    align-items: center;
+    height: 60%;
+    width: 25%;
+}
+
+.song-card-right,
+.song-card-left {
+    background-color: lightpink;
+    padding: 5px;
+    margin: 5px;
+}
+
+.song-card-right {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 70%;
+}
+
+.song-card-left {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.song-status,
+.song-name,
+.under-song {
+    background-color: lightblue;
+    margin: 5px;
+    padding: 5px;
+    height: 33.33333333333333333333333333333333333333333%; /*more accurate*/
+}
+
+.song-status {
+    width: 35%;
+}
+
+.song-name {
+    width: 95%;
+}
+
+.under-song {
+    width: 55%;
+}
+
+.top-song-card {
+    width: 60%;
+    height: 60%;
+}
