@@ -4,7 +4,12 @@
   <meta charset="UTF-8">
   <title>Merge Tone</title>
   <link rel="stylesheet" href="index-styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chela+One&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="page">
@@ -15,7 +20,7 @@
         </div>
         <div class="name-stack">
           <div class="project-name">Merge Tone</div>
-          <div class="project-intro">Merge Tone is an web-based service that finds two songs with the same BPM, and can merge the vocals from one song to the instruments of the other.</div>
+          <div class="project-intro">Merge Tone is a web-based service that finds two songs with the same BPM, and can merge the vocals from one song to the instruments of the other.</div>
         </div>
         <div class="right-box">
           <div class="avatar"><img src="media/merge-tone-logo-clear-bg.png" alt="merge-tone-logo"></div>
@@ -24,20 +29,36 @@
       <div class="top-page-lower">
         <div class="top-page-song">
           <div class="song-card top-song-card">
-            <div class="song-card-left"><img src="media/vinyl.gif" alt="vinyl"></div>
+            <div class="song-card-left"><img src="media/spinning-cd.gif" alt="vinyl"></div>
             <div class="song-card-right">
-              <div class="song-status">Vocal</div>
+              <div class="song-status">
+                <form>
+                  <label for="song-aspect-left"></label>
+                  <select id="song-aspect-left" name="song-aspect-left">
+                    <option value="vocals">Vocals</option>
+                    <option value="instrumentals">Instrumentals</option>
+                  </select>
+                </form>
+              </div>
               <div class="song-name">Song Name 1</div>
               <div class="under-song">John Artist</div>
             </div>
           </div>
         </div>
-        <button class="merge-music blue-button">Merge</button>
+        <button id="merge" class="merge-music blue-button" onclick="textChangeAwesome()">Merge!</button>
         <div class="top-page-song">
           <div class="song-card top-song-card">
             <div class="song-card-left"><img src="media/vinyl.gif" alt="vinyl"></div>
             <div class="song-card-right">
-              <div class="song-status">Vocal</div>
+              <div class="song-status">
+                <form>
+                <label for="song-aspect-right"></label>
+                  <select id="song-aspect-right" name="song-aspect-right" required>
+                    <option value="vocals">Vocals</option>
+                    <option value="instrumentals">Instrumentals</option>
+                  </select>
+                </form>
+              </div>
               <div class="song-name">Song Name 2</div>
               <div class="under-song">John Artist</div>
             </div>
@@ -47,16 +68,20 @@
     </div>
     <div class="bottom-page">
       <div class="bottom-page-first">
-        <div class="song-card">
-          <div class="song-card-left"><img src="media/vinyl.gif" alt="vinyl"></div>
-          <div class="song-card-right">
-            <div class="song-status">Vocal</div>
-            <div class="song-name">Song Name 3</div>
-            <div class="under-song">John Artist</div>
+        <div class="bottom-container">
+          <div class="left-arrow"><img src="media/arrow-left.png" alt="left-arrow"></div>
+          <div id="middle-song-card" class="song-card">
+            <div class="song-card-left new-song-card-left"><img src="media/holo-cd.gif" alt="holo-cd"></div>
+            <div class="song-card-right new-song-card-right">
+              <div class="song-status">Vocals</div>
+              <div class="song-name">New Song</div>
+              <div class="under-song">John Artist</div>
+            </div>
           </div>
+          <div class="right-arrow"><img src="media/arrow-right.png" alt="right-arrow"></div>
         </div>
       </div>
-      <button class="blue-button try-it">Try It</button>
+      <button id="try-it-button" class="blue-button try-it" onclick="textChangeNice()">Try It!</button>
       <div class="bottom-page-second">
         <div class="second-left">
           <div class="upload-container">
@@ -79,5 +104,15 @@
       </div>
     </div>
   </div>
+
+  <script>
+    function textChangeNice() {
+      document.getElementById("try-it-button").innerHTML = "Nice!";
+    }
+
+    function textChangeAwesome() {
+      document.getElementById("merge").innerHTML = "Awesome!";
+    }
+  </script>
 </body>
 </html>

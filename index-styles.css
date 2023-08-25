@@ -21,6 +21,17 @@ img {
     transition: transform 25ms;
 }
 
+select {
+    margin: 0;
+    border: none;
+    outline: none;
+    appearance: none;
+    background-color: transparent;
+    font-family: "Concert One", cursive;
+    font-size: 1em;
+    align-self: flex-start;
+}
+
 img:hover {
     transform: scale(0.98);
 }
@@ -87,10 +98,10 @@ img:hover {
     height: 40%;
     overflow: scroll;
     border-radius: 0 0 0.5rem 0.5rem;
-    text-align: justify;
     font-size: 1.125rem;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .project-intro::-webkit-scrollbar {
@@ -117,6 +128,7 @@ img:hover {
     flex: 0.25 0.25 auto;
     margin: 10px;
     height: 30%;
+    width: 5%;
     align-self: center;
     display: flex;
     justify-content: center;
@@ -162,8 +174,16 @@ img:hover {
     background-color: rgb(243, 232, 150);
     height: 40%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+}
+
+.bottom-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 70%;
 }
 
 .bottom-page-second {
@@ -179,6 +199,9 @@ img:hover {
     padding: 10px;
     top: 38%;
     width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .blue-button {
@@ -187,6 +210,8 @@ img:hover {
     transition: transform 50ms, box-shadow 75ms;
     overflow: hidden;
     border-radius: 5px;
+    font-family: 'Chela One', cursive;
+    font-size: 1.2em;
 }
 
 .blue-button:hover {
@@ -245,16 +270,17 @@ img:hover {
 
 .logo {
     width: 20%;
+    background-color: rgb(179, 254, 176);
 }
 
 .music-aspect {
+    background-image: linear-gradient(to right, rgb(179, 254, 176), transparent);
     width: 80%;
 }
 
 .logo,
 .music-aspect {
     margin: 5px;
-    background-color: rgb(179, 254, 176);
     padding: 10px;
     height: 90%;
     display: flex;
@@ -288,6 +314,10 @@ img:hover {
     border-radius: 1rem;
 }
 
+#middle-song-card {
+    width: 40%;
+}
+
 .song-card-right,
 .song-card-left {
     background-color: rgb(255, 204, 237);
@@ -312,6 +342,11 @@ img:hover {
     border-radius: 0.5rem 0 0 0.5rem;
 }
 
+.new-song-card-left,
+.new-song-card-right {
+    background-color: rgb(255, 204, 237);
+}
+
 .song-status,
 .song-name,
 .under-song {
@@ -321,11 +356,13 @@ img:hover {
     height: 30%;
     flex: 1 1 auto;
     text-align: left;
-
+    display: flex;
+    align-items: center;
 }
 
 .song-status {
     width: 35%;
+    overflow: visible;
 }
 
 .song-name {
@@ -340,3 +377,52 @@ img:hover {
     width: 60%;
     height: 60%;
 }
+
+@keyframes arrow-left {
+    0% {top: 7.5%;}
+    25% {top: 15%;}
+    50% {top: 22.5%;}
+    75% {top: 30%;}
+    100% {top: 37.5%;}
+}
+
+@keyframes arrow-right {
+    0% {top: 37.5%;}
+    25% {top: 30%;}
+    50% {top: 22.5%;}
+    75% {top: 15%;}
+    100% {top: 7.5%;}
+}
+
+.left-arrow,
+.right-arrow {
+    height: 50%;
+    padding: 10px;
+}
+
+.left-arrow img {
+    top: 0;
+    animation-name: arrow-left;
+    animation-duration: 0.85s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: linear;
+    position: relative;
+}
+
+.right-arrow img {
+    top: 50%;
+    animation-name: arrow-right;
+    animation-duration: 0.85s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: linear;
+    position: relative;
+}
+
+.left-arrow img,
+.right-arrow img {
+    height: 50%;
+}
+
+

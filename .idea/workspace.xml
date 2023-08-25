@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="48f71599-5eb1-4c6e-b7ff-3be5cf8d232a" name="Changes" comment="" />
+    <list default="true" id="48f71599-5eb1-4c6e-b7ff-3be5cf8d232a" name="Changes" comment="hello">
+      <change afterPath="$PROJECT_DIR$/media/arrow-left.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/arrow-right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/holo-cd.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/spinning-cd.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/index-styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,20 +26,27 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
+  </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 2
 }]]></component>
   <component name="ProjectId" id="2URncAEgF5CCryYBRbGLvGLey8o" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "working",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/Darst/WebstormProjects",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -41,6 +56,23 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="QodanaHighlightedReportService">
+    <option name="localRunNotPublishedPersistedInfo">
+      <LocalReportPersistedInfo>
+        <option name="path" value="C:\Users\Darst\AppData\Local\Temp\qodana_output\qodana.sarif.json" />
+        <option name="reportGuid" value="74ca33c2-2787-460f-bd35-a01375ac4daa" />
+        <option name="reportName" value="merge-tone/qodana/2023-08-24" />
+      </LocalReportPersistedInfo>
+    </option>
+  </component>
+  <component name="QodanaIsSelectedPersistenceService">
+    <option name="selectedOrLoading" value="true" />
+  </component>
+  <component name="QodanaReportsService">
+    <option name="descriptions">
+      <ReportDescription localRun="true" path="C:\Users\Darst\AppData\Local\Temp\qodana_output\qodana.sarif.json" reportGuid="74ca33c2-2787-460f-bd35-a01375ac4daa" reportId="merge-tone/qodana/2023-08-24" />
+    </option>
+  </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Darst\WebstormProjects\web-dev-projects\merge-tone\media" />
@@ -54,11 +86,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1692911337871</updated>
-      <workItem from="1692911338907" duration="8527000" />
+      <workItem from="1692911338907" duration="22247000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="initialcommit" />
+    <MESSAGE value="hello" />
+    <option name="LAST_COMMIT_MESSAGE" value="hello" />
   </component>
 </project>
