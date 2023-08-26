@@ -10,8 +10,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Chela+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+  <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+
+
 </head>
 <body>
+  <!-- External Libraries -->
+  <py-config>
+    packages = ["pytube"]
+  </py-config>
+  <!-- packages = ["ipython", "librorsa", "pydub", "pythumb", "pytube", "spleeter", "pydub", "argparse", "math", "wave", "matplotlib.pyplot", "numpy", "scipy", "pywt"] -->
+
   <div class="page">
     <div class="top-page">
       <div class="top-page-upper">
@@ -89,7 +99,15 @@
               <div class="logo">Logo</div>
               <div class="music-aspect">Vocal</div>
             </div>
-            <div class="upload">Upload</div>
+            <div class="upload">
+              <form onsubmit="return false">
+                <label for="link-vocal">Link:</label><br>
+                <input type="text" id="link-vocal">
+                <button type="submit" id="get-vocal" py-click="submit_link_vocal()" type="submit" class="py-button">Submit</button>
+                <p id="output-vocal-link"></p>
+                <p id="output-vocal-title"></p>
+              </form>
+            </div>
           </div>
         </div>
         <div class="second-right">
@@ -98,12 +116,21 @@
               <div class="logo">Logo</div>
               <div class="music-aspect">Instrumental</div>
             </div>
-            <div class="upload">Upload</div>
+            <div class="upload">
+              <form onsubmit="return false">
+                <label for="link-instrument">Link:</label><br>
+                <input type="text" id="link-instrument">
+                <button type="submit" id="get-instrument" py-click="submit_link_instrument()" type="submit" class="py-button">Submit</button>
+                <p id="output-instru-link"></p>
+                <p id="output-instru-title"></p>
+              </form>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+
 
   <script>
     function textChangeNice() {
@@ -114,5 +141,15 @@
       document.getElementById("merge").innerHTML = "Awesome!";
     }
   </script>
+
+
+  <!-- Pyscript / Python Code -->
+  <py-script src = "./python/bpm_detection.py"></py-script>
+  <py-script src = "./python/mp3_from_url.py"></py-script>
+
+  <py-script src = "./python/main.py"></py-script>
+
+
+
 </body>
 </html>
