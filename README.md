@@ -15,5 +15,6 @@ $ python -m http.server
 
 ## Authors and acknowledgment
 Darryl Nurse [GitHub](https://github.com/darrylnurse)
+<br/>
 Jonel Muncan [GitHub](https://github.com/jonelm01)
 
